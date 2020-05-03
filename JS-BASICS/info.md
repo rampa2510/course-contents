@@ -39,4 +39,18 @@ a[1] is shubh
 String is an array too.
 
  
-3) JS functions - In js To improve code redability and reusability also to improve modularity what we can do is seperate our code depending on utility or function. This will make it easier to read our code and will save tons of lines of code for eg - If we are making a game of stone paper scssior there is a comman thing that we want both the players to do that is to choose between stone paper and scissor so now instead of writing the code for it 2 times what we can do is just make a function of it and whenever we need it just use it. They create their own scope
+3) JS functions - In js To improve code redability and reusability also to improve modularity what we can do is seperate our code depending on utility or function. This will make it easier to read our code and will save tons of lines of code for eg - If we are making a game of stone paper scissor there is a comman thing that we want both the players to do that is to choose between stone paper and scissor so now instead of writing the code for it 2 times what we can do is just make a function of it and whenever we need it just use it. They create their own scope. A function is terminated if it encounters a return statement so instructions after return are not executed.
+Syntax -
+function b(){
+   // do something
+} 
+b()
+
+function name(a){
+   console.log(a)
+   return;
+   console.log("l") // not executed
+}
+name(23) // call a function a will be assigned 23
+
+as we can see we can pass an argument to it too and call it whenever we like how many times we like and statements after return will not be executed
