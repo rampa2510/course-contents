@@ -34,4 +34,7 @@ let d = {
 let e = {...d}
 console.oog(e) {key:"value"}
 
- 
+1) Arrow functions - In ES6 a new way to create function was introduced the arrow functions. This syntax is more concise and brings along other features as well for example instead of writing return statements we can use different syntax
+eg 
+1) For returning a value just do ()=>value
+2) For returning a Object just do ()=>({key:"value"})
