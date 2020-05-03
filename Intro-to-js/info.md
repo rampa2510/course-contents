@@ -11,3 +11,14 @@
 1) Variables in JS
    - JS like other programmimg langauges has the concept of variables. Variables in JS are used to store data for refrencing it later for our use.
    - Example if we fetch a data from a server and we want to perform some mathematical operations on the data what we will do is store it in a variable so that we can reference it after fetching and use it however we like
+2) Scope - In JS you can create another scope using the {} imagine scopes as bunch of boxes inside other like if we have a box A and inside is another box B then B has access to all the things in A but A does npot have access to the contents of B as its inside B container or inside physical walls of B. Same way we can create scopes eg
+eg -
+let a = "ram"
+{
+   let b = "shubh";
+   console.log(a,b); "ram","shubh"
+}
+
+console.log(a) //ram
+console.log(b) // error
+As we can see the outer scope has no access to the inner scope but the inner scope has access to the outer scope variables and stuff.
