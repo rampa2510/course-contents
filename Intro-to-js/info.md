@@ -8,15 +8,61 @@
 - Its evolving languages as the ECMAScript community is making improvements in the langauge each year.
 
 # JS  Basics
-1) Variables in JS
-   - JS like other programmimg langauges has the concept of variables. Variables in JS are used to store data for refrencing it later for our use.
+## Variables in JS
+   - JS like other programmimg langauges has the concept of variables. Variables in JS are used to store data so that we reference it later for our use.
+   - Since instructions in programing are executed one line at a time. So we need to store in first so that we can reference it on another line and use it.
    - Example if we fetch a data from a server and we want to perform some mathematical operations on the data what we will do is store it in a variable so that we can reference it after fetching and use it however we like
+
 3 ways to make variables 
    1) var - Non constant variable declartion
+   ```javascript 
+   var a = 23; //assignementof variable a
+   a = 2; // allowed
+   ```
    2) let - non constant es6 variable declaration
-   3) const - constant value es6 variable declaration
-1) Scope - In JS you can create another scope using the {} imagine scopes as bunch of boxes inside other like if we have a box A and inside is another box B then B has access to all the things in A but A does not have access to the contents of B as its inside B container or inside physical walls of B. Same way we can create scopes eg
+   ```javascript 
+   let b = 23; //assignment of variable b
+   b = 2; //allowed
+   ```
+
+   1) const - constant value es6 variable declaration
+   ```javascript 
+   const c = 23; // assignment of variable c
+   c = 2; // error
+   ```
+
+
+## Difference between var & let
+1) Hoisting - JS is executed in 2 phases. Creataion phase and execution phase. In creating phase your file is scanned and instruction which require memory allocation are allocated memory and in execution the memory is filled with value.
+So therefore when you do this
+
+```javascript
+console.log(a) //undefined 
+var a;
+//it still works becuase of hositing because the variable a is already initialised in phase 1
+
+//but for let it doesnt work it still allocates memory but it doesnt initialise the memory
+console.log(a) //error
+let a;
+```
+
+2) Redeclaration - we can redeclare variables in var with same name but not in let
 eg -
+```javascript
+var a =23;
+var a = 24; //allowed
+let b = 23;
+let b = 24; //error
+```
+3) Scope - We will learn after functions
+   
+4) Global properties - same we will learn after functions
+
+
+## Scope 
+In JS you can create another scope using the {}. Imagine scopes as bunch of boxes, like if we have box A and inside it is another box B then B has access to all the things in A but A does not have access to the contents of B as the things are inside B container or inside physical walls of B.
+eg -
+```javascript
 let a = "ram"
 {
    let b = "shubh";
@@ -24,26 +70,11 @@ let a = "ram"
 }
 
 console.log(a) //ram
-console.log(b) // error
+console.log(b) // error as b is not in this scope
+```
+
 As we can see the outer scope has no access to the inner scope but the inner scope has access to the outer scope variables and stuff.
 
-Difference between var let
-1) Hoisting - JS is executed in 2 phase creataion phase and execution phase. In creating phase your file is scanned and instruction which require memory allocation are allocated memory and in execution the value is filled;
-So therefore when you do this
-console.log(a) //undefined 
-var a;
-it still works becuase of hositing because the variable a is already initialised in phase 1
-but for let it doesnt work it still allocates memory but it doesnt initialise the memory
-console.log(a) //error
-let a;
+[Go to lecture Struture](../Struture.md)                                   
 
-2) Redeclaration - we can redeclare variables in var with same name but not in let
-eg -
-var a =23;
-var a = 24;
-let b = 23;
-let b = 24; //error
-
-3) Scope - We will learn after functions
-   
-4) Global properties - same we will learn after functions
+[Next Lecture](../Js-Basics/info.md)
