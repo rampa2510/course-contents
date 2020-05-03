@@ -39,4 +39,4 @@ a[1] is shubh
 String is an array too.
 
  
-3) JS functions - In js To improve code redability and reusability also to improve modularity what we can do is seperate our code depending on utility or function. This will make it easier to read our code and will save tons of lines of code for eg - If we are making a game of stone paper scssior there is a comman thing that we want both the players to do that is to choose between stone paper and scissor so now instead of writing the code for it 2 times what we can do is just make a function of it and whenever we need it just use it. 
+3) JS functions - In js To improve code redability and reusability also to improve modularity what we can do is seperate our code depending on utility or function. This will make it easier to read our code and will save tons of lines of code for eg - If we are making a game of stone paper scssior there is a comman thing that we want both the players to do that is to choose between stone paper and scissor so now instead of writing the code for it 2 times what we can do is just make a function of it and whenever we need it just use it. They create their own scope

@@ -9,5 +9,20 @@ console.log(a,b,c)
 }
 console.log(a)
 
+console.log(testVar);
+var testVar;
+
+console.log(testLet);
+let testLet;
+
 //Error line
 // console.log(e);
+
+// function nf(){
+//   var a=23;
+//   {
+//     let ee = 23;
+//   }
+//   console.log(a,ee)
+// }
+// nf()

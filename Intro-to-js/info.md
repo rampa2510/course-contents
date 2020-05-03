@@ -22,3 +22,24 @@ let a = "ram"
 console.log(a) //ram
 console.log(b) // error
 As we can see the outer scope has no access to the inner scope but the inner scope has access to the outer scope variables and stuff.
+
+Difference between var let
+1) Hoisting - JS is executed in 2 phase creataion phase and execution phase. In creating phase your file is scanned and instruction which require memory allocation are allocated memory and in execution the value is filled;
+So therefore when you do this
+console.log(a) //undefined 
+var a;
+it still works becuase of hositing because the variable a is already initialised in phase 1
+but for let it doesnt work it still allocates memory but it doesnt initialise the memory
+console.log(a) //error
+let a;
+
+2) Redeclaration - we can redeclare variables in var with same name but not in let
+eg -
+var a =23;
+var a = 24;
+let b = 23;
+let b = 24; //error
+
+3) Scope - We will learn after functions
+   
+4) Global properties - same we will learn after functions
