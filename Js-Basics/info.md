@@ -110,3 +110,7 @@ function name(a){
 name(23) // call a function a will be assigned 23
 ```
 as we can see we can pass an argument to it too and call it whenever we like how many times we like and statements after return will not be executed
+
+[Lecture Struture](../Struture.md)
+
+[Next Lecture](../Control-strutures-Js/info.md)
