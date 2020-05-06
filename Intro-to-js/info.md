@@ -7,7 +7,14 @@
 - Its powered by npm.
 - Its evolving languages as the ECMAScript community is making improvements in the langauge each year.
 
-# JS  Basics
+# How does JS works
+JS is run by javascript engines in the browser.
+- Chrome uses v8
+- Bing uses chakra
+- Firefox uses SpiderMonkey
+It will read the code line by line and check for syntax(code) errors if it finds any it will throw an error when it runs. Else it will compile into machine understandable code and execute it.
+
+# JS  Basic
 ## Variables in JS
    - JS like other programmimg langauges has the concept of variables. Variables in JS are used to store data so that we reference it later for our use.
    - Since instructions in programing are executed one line at a time. So we need to store in first so that we can reference it on another line and use it.
